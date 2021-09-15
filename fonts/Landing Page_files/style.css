@@ -1,0 +1,310 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Sedan SC";
+  src: url(fonts/SedanSC-Regular.woff);
+}
+
+@font-face {
+  font-family: "Miriam" ;
+  src: url(fonts/MiriamLibre-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Miriam";
+  src: url(fonts/MiriamLibre-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Mirza";
+  src: url(fonts/Mirza-Regular.ttf);
+}
+/* General Selectors */
+
+html{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+.wrapper{
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* Header */
+header{
+  padding: 1em 0;
+  background: url(images/siesta-bg-nav.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+
+header .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  max-height: 50px;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+
+}
+
+.logo span{
+  font-family: "Sedan SC";
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: #f9faf8;
+  margin-left: 0.8em;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+
+}
+.header-links{
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  list-style: none;
+}
+
+.header-links li a{
+  font-family: "Sedan SC";
+  font-size: 22px;
+  color: #fff;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+
+}
+
+/* Section Hero */
+
+.hero{
+  padding: 10em 0;
+}
+
+.hero .wrapper{
+  display: flex;
+  gap: 15em;
+  justify-content: center;
+  align-items: center;
+}
+.hero p {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #4e4c4c;
+  line-height: 1.5;
+}
+
+.hero p:nth-of-type(1){
+  margin-bottom: 1em;
+}
+
+.hero p:nth-of-type(2){
+  margin-bottom: 3em;
+}
+
+.hero h1{
+  font-family: "Mirza";
+  font-size: 52px;
+  margin-bottom: 1em;
+  color: #3F8DBA;
+  -moz-text-shadow: 0px 4px 4px hsla(0,0%,0%,0.25);
+  text-shadow: 0px 2px 4px hsla(0, 0%, 0%, 0.25);
+}
+
+.hero .button{
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(#EA7B88, rgba(234,123,136,0.5)); 
+  border-style: none;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+  cursor: pointer;
+  color: #fff;
+}
+
+.hero .button span{  
+  font-family: "Miriam";
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.hero .button:hover{
+  background: linear-gradient(#fc6577, rgba(231, 96, 112, 0.5)); 
+}
+
+
+
+
+/* Section Random */
+
+.random{
+  text-align: center;
+  padding: 8em 0;
+  background: url(images/BG\ Services.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.random .info-boxes{
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 1em;
+}
+
+.random .info-box{
+  max-width: 200px;
+}
+
+.random .info-box img{
+  border: 10px solid #efefef;
+  border-radius: 100px;
+  margin-bottom: 1em;
+  max-width: 200px;
+  width: 100%;
+  object-fit: stretch;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+}
+
+.random .info-box p{
+  font-family: "Roboto";
+  font-size: 18px;
+  letter-spacing: 5%;
+  color: #fff;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+
+}
+
+/* Section Testimonial */
+
+
+
+.testimonial .wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10em;
+}
+
+.testimonial p{
+  font-family: "Roboto";
+  margin-bottom: 1em;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #2a729b;
+}
+
+.testimonial span{
+  font-family: "Roboto";
+  align-self: flex-end;
+  margin-right: 5em;
+}
+
+
+/* Section CTA - Subscribe Footer*/
+
+section.cta{
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/BG\ CTA.png) no-repeat center center;
+  background-size: cover;
+}
+
+.cta .wrapper{
+  display: flex;
+  justify-content: center;
+}
+.cta .wrapper .card{
+  background-color: #fff;
+  color: #3f8dba;
+  border-radius: 15px;
+  padding: 2em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+  filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
+
+}
+
+.cta .card h2{
+  font-family: "Roboto";
+  font-size: 36px;
+
+}
+
+.cta .card p{
+  font-family: "Roboto";
+  font-size: 24px;
+  color: #4E4C4C;
+}
+
+
+.card .button {
+  background-color: #fff;
+  border: none;
+  filter: drop-shadow(0px 2px 2px hsla(0,0%,0%,0.25));
+  padding: 1em 1.5em;
+  flex: 0 0 auto;
+  border-radius: 10px;
+}
+
+.card .button span {
+  font-family: "Miriam";
+  font-size: 16px;
+  letter-spacing: 2%;
+}
+
+.card .button:hover{
+  background: linear-gradient(#EA7B88, rgba(234,123,136,0.5)); 
+  color: #fff;
+}
+/* Footer */
+footer{
+  background-color: #fff;
+  color: rgba(197, 31, 181, 0.767);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}

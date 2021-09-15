@@ -150,6 +150,7 @@ header .wrapper{
   border-style: none;
   filter: drop-shadow(0px 4px 4px hsla(0,0%,0%,0.25));
   cursor: pointer;
+  color: #fff;
 }
 
 .hero .button span{  
@@ -159,8 +160,15 @@ header .wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: inherit;
 }
+
+.hero .button:hover{
+  background: linear-gradient(#fc6577, rgba(231, 96, 112, 0.5)); 
+}
+
+
+
 
 /* Section Random */
 
@@ -285,6 +293,10 @@ section.cta{
   letter-spacing: 2%;
 }
 
+.card .button:hover{
+  background: linear-gradient(#EA7B88, rgba(234,123,136,0.5)); 
+  color: #fff;
+}
 /* Footer */
 footer{
   background-color: #fff;
