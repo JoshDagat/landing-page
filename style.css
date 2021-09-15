@@ -36,7 +36,10 @@ button{
 /* Header */
 header{
   padding: 1em 0;
-  background-color: #b59998;
+  background: url(images/siesta-bg-nav.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
 }
 
 header .wrapper{
@@ -56,6 +59,7 @@ header .wrapper{
   list-style: none;
 }
 
+
 .header-links li,
 .hero p{
   font-size: 18px;
@@ -64,8 +68,9 @@ header .wrapper{
 .hero p {
   color: black;
 }
-.header-links li{
+.header-links li a{
   font-weight: 700;
+  color: #fff;
 }
 
 .logo{
@@ -105,13 +110,11 @@ header .wrapper{
 
 .random{
   text-align: center;
-  margin: 1em 0;
-  padding: 3em 0 5em 0;
+  padding: 8em 0;
+  background: url(images/BG\ Services.png) no-repeat center center fixed;
+  background-size: cover;
 }
-.random h2{
-  font-size: 24px;
-  margin-bottom: 3em;
-}
+
 .random .info-boxes{
   display: flex;
   justify-content: center;
@@ -124,18 +127,17 @@ header .wrapper{
 }
 
 .random .info-box img{
-  border: 4px solid #3882f6;
-  border-radius: 25px;
+  border: 10px solid #ffffff;
+  border-radius: 100px;
   margin-bottom: 1em;
-  min-width: 200px;
+  max-width: 200px;
+  width: 100%;
   object-fit: stretch;
 }
 
 /* Section Testimonial */
 
-.testimonial{
-  background-color: #e5e7eB;
-}
+
 
 .testimonial .wrapper{
   display: flex;
@@ -167,6 +169,8 @@ section.cta{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(images/BG\ CTA.png) no-repeat center center;
+  background-size: cover;
 }
 
 .cta .wrapper{
@@ -174,15 +178,21 @@ section.cta{
   justify-content: center;
 }
 .cta .wrapper .card{
-  background-color: #3882f6;
-  color: white;
+  background-color: #fff;
+  color: #3f8dba;
+  border: 1px solid #4b4b4b;
   border-radius: 15px;
-  padding: 2em 7em;
+  padding: 2em 5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 1 auto;
 }
+
+.cta .card p{
+  color: #000;
+}
+
 
 .card button {
   border: 2px solid white;
@@ -195,5 +205,5 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
 }
